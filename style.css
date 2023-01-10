@@ -1,0 +1,480 @@
+:root{
+    --colorUno: #82AAE3;
+    --colorDos:#91D8E4;
+    --colorTres: #fefefe;
+    --colorCuatro: #BFEAF5;
+    --fontUno: 'Anton', sans-serif;
+    --fontDos: 'Hanken Grotesk', sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+
+.header__container{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    gap: 25%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--colorTres);
+}
+
+.header__container h1 {
+    font-family: var(--fontDos);
+    font-weight: 900;
+    color: var(--colorUno);
+    text-shadow: 1px 1px 0px #000;
+    font-size: 2.5em;
+}
+
+.header__container button{
+    height: 40px;
+    width: 200px;
+    border-radius: 28px;
+    font-family: var(--fontDos);
+    font-weight: 900;
+    font-size: 1.7em;
+    color: var(--colorUno);
+    background-color: var(--colorTres);
+    border: 1px solid var(--colorUno);
+    box-shadow: 1px 1px 1px #000;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.header__container button:hover{
+    transform: scale(1.2);
+    background-color: var(--colorUno);
+    color: var(--colorTres);
+}
+
+
+.main__container{
+    display: flex;
+    gap: 40px;
+    padding: 50px;
+    height: 980px;
+    background-color: rgba(210, 210,210, 0.7);
+}
+
+.columna{
+    flex: 50%;
+}
+
+.uno{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.uno h1{
+    font-family: var(--fontDos);
+    font-size: 5em;
+    color: var(--colorUno);
+    text-align: center;
+}
+
+.uno p {
+    font-family: var(--fontDos);
+    font-size: 1.9em;
+    color: rgba(150, 150,150, 1);
+    text-align: left;
+}
+
+.dos{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.dos img{
+    width: 100%;
+    height: 60%;
+    border-radius: 28px;
+}
+
+.section__container{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    background-color: rgba(210, 210,210, 0.7);
+    align-items: center;
+    height: 970px;
+}
+
+.servicio__container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0;
+}
+
+.servicio__container h1 {
+    font-family: var(--fontUno);
+    font-weight: 100;
+    letter-spacing: 1px;
+    color: var(--colorUno);
+    font-size: 2.5em;
+}
+
+.servicio__container p {
+    font-family: var(--fontDos);
+    font-size: 2em;
+    color: rgba(150, 150,150, 1);
+}
+
+.servicios__fotos{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+}
+
+.servicios{
+    flex: 33%;
+}
+
+.servicios img {
+    width: 100%;
+    height: 50%;
+    border-radius: 4%;
+}
+.servicios span {
+    color: var(--colorUno);
+    font-size: 1.8em;
+}
+
+.servicios h3 {
+    color: var(--colorUno);
+    font-size: 1.8em;
+    text-align: center;
+}
+
+
+.servicios p {
+    font-family: var(--fontDos);
+    font-size: 2em;
+    color: rgba(150, 150,150, 1);
+    text-align: center;
+
+}
+
+.section__entrenadores{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 50px;
+    height: 1200px;
+    text-align: center;
+    background-color: var(--colorTres);
+}
+
+.section__entrenadores__titulo__subtitulo h1{
+    font-family: var(--fontUno);
+    font-weight: 100;
+    letter-spacing: 1px;
+    color: var(--colorUno);
+    font-size: 2.5em;
+
+}
+
+.section__entrenadores__titulo__subtitulo p {
+    font-family: var(--fontDos);
+    font-size: 2em;
+    color: rgba(150, 150,150, 1);
+    text-align: center;
+
+}
+
+.entrenadores__container{
+    display: flex;
+    width: 100%;
+    height: 900px;
+    gap: 30px;
+    justify-content: space-around;
+}
+.entrenadores{
+    height: 100%;
+}
+
+.entrenadores img {
+    width: 70%;
+    height: 70%;
+    border-radius: 28px;
+}
+
+.entrenadores h3 {
+    color: var(--colorUno);
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.entrenadores p {
+    font-family: var(--fontDos);
+    font-size: 2em;
+    color: rgba(150, 150,150, 1);
+    text-align: center;
+}
+
+.btn__contacto{
+    height: 60px;
+    width: 300px;
+    border-radius: 28px;
+    font-family: var(--fontDos);
+    font-weight: 900;
+    font-size: 1.9em;
+    color: var(--colorUno);
+    background-color: var(--colorTres);
+    border: 1px solid var(--colorUno);
+    box-shadow: 1px 1px 1px #000;
+    cursor: pointer;
+    transition: all .2s ease;
+
+}
+
+.btn__contacto:hover{
+    transform: scale(1.2);
+    background-color: var(--colorUno);
+    color: var(--colorTres);
+}
+
+.footer__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(150, 150,150, .5);
+    height: 920px;
+    width: 100%;
+}
+
+.footer__container__titulo h1 {
+    font-family: var(--fontUno);
+    color: var(--colorUno);
+    font-size: 5em;
+    text-align: center;
+    font-weight: 300;
+}
+h1 span {
+    color: var(--colorTres);
+}
+
+
+.footer__container_iconos{
+    display: flex;
+    gap: 50px;
+    justify-content: space-around;
+    font-size: 4em;
+    color: rgba(150, 150,150, 1);
+}
+
+
+
+@media screen and  (max-width:600px){
+    *{
+        padding: 5px;
+    }
+    .header__container{
+        width: 100%;
+    }
+
+    .header__container h1 {
+        font-family: var(--fontDos);
+        font-weight: 900;
+        color: var(--colorUno);
+        text-shadow: 1px 1px 0px #000;
+        font-size: 1.1em;
+    }
+
+    .header__container button{
+        height: 30px;
+        width: 150px;
+        font-size: 1em;
+    }
+    
+    .main__container{
+        flex-wrap: wrap;
+        gap: 0;
+        height: 990px;
+        padding: 20px;
+    }
+    .main__container h1 {
+        font-size: 1.5em;
+    }
+
+    .columna{
+        flex-wrap: wrap;
+        vertical-align: auto;
+    }
+    .uno{
+        gap: 0;
+    }
+
+    .uno h1{
+        font-size: 3em;
+    }
+
+    .uno p{
+        text-align: left;
+        font-size: 1.3em;
+
+    }
+
+
+
+    .section__container{
+        padding: 0;
+        height: 1700px;
+    }
+
+    .servicio__container h1{
+        font-size: 2em;
+    }
+
+    .servicio__container p{
+        font-size: 1.3em;
+        margin: 0;
+    }
+    .servicios__fotos{
+        flex-wrap: wrap;
+        height: 1900px;
+    }
+
+    .servicios{
+        flex: 100%;
+    }
+
+    .servicios p{
+        font-size: 1.3em;
+    }
+
+    .section__entrenadores{
+        height: 1400px;
+        max-width: 600px;
+        flex-wrap: wrap;
+        padding: 0;
+        gap: 0;
+    }
+
+    .entrenadores {
+        height: 500px;
+
+    }
+
+   .entrenadores__container{
+    flex-wrap: wrap;
+    height: 990px;
+    gap: 0;
+   }
+
+   .section__entrenadores__titulo__subtitulo h1 {
+    font-size: 1.7em;
+   }
+   
+   .section__entrenadores__titulo__subtitulo p {
+    font-size: 1.3em;
+   }
+
+   .entrenadores__container img {
+    height: 50%;
+    width: 50%;
+   }
+
+   .entrenadores h3{
+    font-size: 1.4em;
+   }
+
+   .entrenadores p{
+    font-size: 1.3em;
+    
+   }
+
+   .btn__contacto{
+    height: 30px;
+    width: 200px;
+    font-size: 1.1em;
+}
+
+
+   .footer__container{
+    flex-wrap: wrap;
+    height: 600px;
+   }
+   .footer__container__titulo h1{
+    font-size: 1.5em;
+   }
+
+   .footer__container_iconos{
+    font-size: 2em;
+
+   }
+
+
+
+    
+}
+
+@media screen and  (min-width:601px) and (max-width:900px){
+    *{
+        padding: 5px;
+    }
+
+    .main__container{
+        height: 1040px;
+        gap: 0;
+        flex-direction: column
+    }
+    .uno h1 {
+        font-size: 4em;
+    }
+
+    .dos img{
+        width: 100%;
+        height: 80%;
+    }
+
+    .section__container{
+        padding: 20px;
+        height: 2300px;
+    }
+    .servicio__container p{
+        font-size: 1.9em;
+        margin: 0;
+    }
+    .servicios__fotos{
+        flex-wrap: wrap;
+        gap: 0;
+    }
+    .servicios{
+        flex: 100%;
+    }
+    .servicios p {
+        font-size: 1.9em;
+    }
+
+    .section__entrenadores{
+        height: 2500px;
+        align-content: space-between;
+    }
+
+    .entrenadores__container{
+        flex-wrap: wrap;
+        height: 2000px;
+    }
+
+    .entrenadores{
+        height: 900px;
+    }
+
+    .footer__container__titulo h1 {
+        font-size: 2.8em;
+    }
+
+
+
+
+
+}
